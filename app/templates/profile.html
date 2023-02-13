@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<div class="card">
+    <div class="top">
+        <img src="{{ url_for('static', filename='RF4NkEy.png') }}" alt="Profile Picture">
+
+        <h1 id="name"> Martin Bartley</h1>
+        <p>@<span id="username">martinn.b_</span>
+            <br>Manchester, Jamaica
+            <br>Joined <span id="date">September, 2014</span>
+        </p>
+    </div>
+    <div class="base">
+        <p id="bio">"The longer you live, the more you will realize that the only things that truly exist in this reality are merely pain, suffering and futility."</p>
+
+        <div class="details">
+            <div class="columns">
+                <span id="Posts">2</span>
+                <p>Posts</p>
+            </div>
+            <div class="columns">
+                <span id="Following">1529</span>
+                <p>Following</p>
+            </div>
+            <div class="columns">
+                <span id="Followers">1703</span>
+                <p>Followers</p>
+            </div>
+        </div>
+
+        <button>Follow</button>
+    </div>
+</div>
+
+{% endblock %}
